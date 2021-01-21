@@ -94,4 +94,13 @@ input, select {
 
 *, *:after, *:before {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+hr {
+    color: black;
+    width: 50%;
+    height: 5px;
+    border-radius: 50%;
+    margin: 25px auto;
 }

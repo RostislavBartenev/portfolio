@@ -1,15 +1,33 @@
 import React from 'react';
 
 import styles from './Navigation.module.scss'
+import NavLink from "../NavLink/NavLink";
+
+const nav = [
+  {
+    id: 1,
+    name: 'About',
+    link: '#about',
+  },
+  {
+    id: 2,
+    name: 'Portfolio',
+    link: '#portfolio',
+
+  },
+  {
+    id: 3,
+    name: 'Contacts',
+    link: '#contacts',
+  },
+]
 
 
 const Navigation = () => {
     return (
         <nav className={styles.nav}>
             <ul>
-                <li><a href="">Обо мне</a></li>
-                <li><a href="">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+              {nav.map(navLink => <NavLink key={navLink.id} {...navLink} />)}
             </ul>
         </nav>
     );

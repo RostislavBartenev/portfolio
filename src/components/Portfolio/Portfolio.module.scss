@@ -1,3 +1,20 @@
 .container {
-  height: 80vh;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 100px 0;
 }

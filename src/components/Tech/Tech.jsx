@@ -40,11 +40,11 @@ const Tech = () => {
   return (
     <section className={styles.container}>
       <h1 className={styles.title}>Skills</h1>
-      <div className={styles.tech}>
+      <div>
         <hr/>
         {tech.map(({id, title, img}) =>
           <div key={id}>
-            <h1>{title}</h1>
+            <h1 className={styles.subtitle}>{title}</h1>
             <div className={styles.img}>
               {img.map(image => <img alt={image.toString()} key={image.toString()} src={image} />)}
             </div>

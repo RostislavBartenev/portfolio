@@ -17,3 +17,9 @@
   text-transform: uppercase;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+}

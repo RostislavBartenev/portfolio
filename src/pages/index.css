@@ -104,3 +104,9 @@ hr {
     border-radius: 50%;
     margin: 25px auto;
 }
+
+@media only screen and (max-width: 425px) {
+    body {
+        font-size: 10px;
+    }
+}

@@ -2,15 +2,16 @@ import React from 'react';
 
 import style from './Project.module.scss'
 
+
 const Project = ({link, name, img}) => {
   return (
     <div className={style.card}>
-      <a className={style.link} target="_blank" href={link}>
-        <img className={style.image} src={img}/>
-        <div className={style.body}>
-          <h3 className={style.title}>{name}</h3>
+      <img
+        src={img}
+        alt={name} className={style.img} />
+        <div className={style.links}>
+          <a href={link} target="_blank" className={style.link}>View</a>
         </div>
-      </a>
     </div>
   );
 };
